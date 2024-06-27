@@ -16,8 +16,8 @@ determine the behavior of source build in the repo.
 
 These changes are all needed before source build will work:
 
-* [`eng/SourceBuild.props`](#engsourcebuildprops) -
-  Basic properties, such as repo name.
+* [`eng/DotNetBuild.props`](#engdotnetbuildprops) -
+  Properties that control various behavior's when building in the context of the [VMR](https://github.com/dotnet/dotnet).
 * [`eng/SourceBuildPrebuiltBaseline.xml`](#engsourcebuildprebuiltbaselinexml) -
   List of allowed prebuilts (approval required).
 * [`eng/Version.Details.xml`](#engversiondetailsxml) -
@@ -26,7 +26,7 @@ These changes are all needed before source build will work:
 
 See the following sections for details:
 
-### `eng/SourceBuild.props`
+### `eng/DotNetBuild.props`
 
 ```xml
 <Project>
@@ -53,8 +53,8 @@ These two properties determine the name of the [intermediate nupkg]:
 `Microsoft.SourceBuild.Intermediate.$(GitHubRepositoryName)[.$(RidSuffix)]`.
 
 It's possible more configuration will be required for specific repos.
-`eng/SourceBuild.props`, similar to `eng/Build.props`, is a place to add extra
-MSBuild code that can change the way source build behaves.
+`eng/DotNetBuild.props`, similar to `eng/Build.props`, is a place to add extra
+MSBuild code that can change the build behavior when building in the Unified Build and/or Source Build.
 
 ### `eng/SourceBuildPrebuiltBaseline.xml`
 
