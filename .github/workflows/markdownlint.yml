@@ -1,4 +1,4 @@
-name: Markdownlint
+name: markdownlint
 
 permissions:
   contents: read
