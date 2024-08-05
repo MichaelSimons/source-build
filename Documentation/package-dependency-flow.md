@@ -151,7 +151,6 @@ for source build, then you either need to declare the Microsoft.Build dependency
 in the Version.Details.xml file or move the `MicrosoftBuildVersion` assignment outside
 of the Versions.props file.
 
-
 ### Repo Level Source Builds
 
 The source build package lifting mechanism is not applicable when building individual
