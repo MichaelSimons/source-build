@@ -30,7 +30,7 @@ versions are released.
 ## Permutations
 
 It is not the intent to test every permutation of distro family, distro version, and architecture.
-Rather, smart decisions should be made to best utilize resources.
+Rather, smart decisions should be made to best utilize resources. 
 
 The following distro versions will be included in the [CI matrix](https://github.com/dotnet/sdk/blob/main/eng/pipelines/templates/stages/vmr-build.yml):
 
